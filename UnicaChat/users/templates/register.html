@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-</head>
-<body>
+{% extends "auth_layout.html" %}
+
+{% block title %}
+    Register
+{% endblock  %}
+
+{% block content %}
+    <p class='title'>
+        REGISTER
+    </p>
     <form action={% url 'register' %} method="POST"> {% csrf_token %}
         <input type="text" placeholder="Username.." name="username">
-        <br>
-        <br>
+        
         <input type="email" placeholder="Email.." name="email">
-        <br>
-        <br>
+        
         <input type="password" placeholder="Senha.." name="password">
-        <br>
-        <br>
+
+        <input type="password" placeholder="Confirme sua senha.." name="confirm_password">
+        
         <input type="text" placeholder="Primeiro Nome.." name="first_name">
-        <br>
-        <br>
+        
         <input type="text" placeholder="Ultimo Nome.." name="last_name">
-        <br>
-        <br>
+        
         <input type="submit" placeholder="Enviar" name="submit">
     </form>
-</body>
-</html>
+{% endblock  %}
