@@ -21,6 +21,12 @@
         
         <input type="text" placeholder="Ultimo Nome.." name="last_name">
         
+        {% for message in messages %}
+            <div class="alert alert-primary" role="alert">
+                <p class="error_dialog">{{ message }}</p>
+            </div>
+        {% endfor %}
+
         <input type="submit" placeholder="Enviar" name="submit">
     </form>
 {% endblock  %}

@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Trebuchet MS';
+    background-color: black;
+    color: lightsalmon;
+    height: 90vh;
+}
+
+h1, p {
+    text-align: center;
+    cursor: default;
+    user-select: none;
+}
+
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    border-color: lightsalmon;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color: lightsalmon;
+    cursor: pointer;
+    transition: transform 0.2 ease;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.05);
+    background-color: lightsalmon;
+}
+
+a:link, a:visited {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 5vh;
+    color: salmon;
+    box-sizing: border-box;
+}
+
+a:hover {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 5vh;
+    color: rgb(255, 78, 58);
+    box-sizing: border-box;
+}
+
+.error_dialog {
+    font-size: 14px;
+    color: darkred;
+    background-color: rgb(241, 110, 110);
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 4px;
+}

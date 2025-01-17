@@ -1,0 +1,21 @@
+{% extends "chats_layout.html" %}
+
+{% block title %}
+    Rooms
+{% endblock  %}
+
+{% block content %}
+    <h1>Rooms</h1>
+    <div class="grid_container">
+    {% for ip, usernames in ips.items %}
+    <div class="grid_item">
+        <p>IP: {{ ip }}</p>
+        <ul>
+            {% for username in usernames %}
+                <li>{{ username }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+    </div>
+{% endblock  %}

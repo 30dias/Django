@@ -14,5 +14,14 @@
         <input type="password" placeholder="Senha.." name="password">
         
         <input type="submit" placeholder="Enviar" name="submit">
+        
     </form>
+    <div>
+        {% for message in messages %}
+            <div class="alert alert-primary" role="alert">
+                <p class="error_dialog">{{ message }}</p>
+            </div>
+        {% endfor %}
+    </div>
+    <a href="/authentication/register">Não tenho uma conta</a>
 {% endblock  %}
